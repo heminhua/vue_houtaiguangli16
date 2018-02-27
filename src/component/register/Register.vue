@@ -8,7 +8,7 @@
     export default {
         data () {
             return {
-                title:'登录'
+                title:"imim"
             }
         }
     }
