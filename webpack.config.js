@@ -8,7 +8,7 @@ module.exports = {
     // 输出文件配置
     output: {
         // 输出的路径，webpack2起就规定必须是绝对路径
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, '/dist'),
         // 静态资源在服务器上运行时的访问路径，可以直接http://localhost:8080/dist/bundle.js访问到服务器中的bundle.js文件
         // publicPath: '/dist',
         // 输出文件名字
