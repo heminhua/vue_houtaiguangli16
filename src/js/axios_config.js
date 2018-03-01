@@ -9,4 +9,5 @@ axios.defaults.baseURL = domain;
 axios.defaults.withCredentials=true;
 
 // 导出配置后的axios
-export default axios;
+export default axios ;
+// export default api ;
