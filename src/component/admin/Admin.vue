@@ -13,7 +13,7 @@
                 </el-header>
                 <!-- 主体部分 -->
                 <el-main>
-                    
+                    <app-main></app-main>
                 </el-main>
             </el-container>
         </el-container>
@@ -25,11 +25,13 @@
 <script>
 import Header from "./subCom/Header.vue";
 import Aside from "./subCom/Aside.vue";
+import Main from "./subCom/Main.vue";
 
 export default {
   components: {
     appHeader: Header,
-    appAside: Aside
+    appAside: Aside,
+    appMain:Main,
   },
 
   data() {
@@ -50,7 +52,7 @@ export default {
       width: 100%;
       position: absolute;
       top: 0;
-      background: #fff;
+      background: #fafafa;
       border-bottom: 1px solid #ccc;
     }
     .el-aside {
@@ -59,8 +61,7 @@ export default {
     }
     .el-main {
       height: 100%;
-      background: orange;
-      padding-top: 60px;
+      padding: 60px 10px 10px;
     }
   }
 }

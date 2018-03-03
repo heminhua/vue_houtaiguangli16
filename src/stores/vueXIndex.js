@@ -6,6 +6,14 @@ import global from './global/globalIndex.js';
 
 export default new vuex.Store({
     modules:{
-        global
+        global:{
+            // state,mutations,actions,getters
+        }
     }
 });
+  // 实例化store对象
+  const store = new vuex.Store({
+    modules:{
+    
+  }
+  });
