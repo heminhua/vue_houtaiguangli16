@@ -1,25 +1,27 @@
 <template>
-    <div class="admin">
+  <div class="admin">
 
-        <el-container>
-            <!-- 公共侧边栏 -->
-            <el-aside width="200px">
-                <app-aside></app-aside>
-            </el-aside>
-            <el-container>
-                <!-- 公共头部 -->
-                <el-header>
-                    <app-header></app-header>
-                </el-header>
-                <!-- 主体部分 -->
-                <el-main>
-                    <app-main></app-main>
-                </el-main>
-            </el-container>
-        </el-container>
+    <el-container>
+      <!-- 公共侧边栏 -->
+      <el-aside width="200px">
+        <app-aside></app-aside>
+      </el-aside>
+      <el-container>
+        <!-- 公共头部 -->
+        <el-header>
+          <app-header></app-header>
+        </el-header>
+        <!-- 主体部分 -->
+        <el-main>
 
-        <router-view></router-view>
-    </div>
+          <app-main-common></app-main-common>
+          <router-view></router-view>
+
+        </el-main>
+      </el-container>
+    </el-container>
+
+  </div>
 
 </template>
 <script>
@@ -31,7 +33,7 @@ export default {
   components: {
     appHeader: Header,
     appAside: Aside,
-    appMain:Main,
+    appMainCommon: Main
   },
 
   data() {
@@ -48,7 +50,7 @@ export default {
     position: relative;
 
     .el-header {
-    line-height: 60px;
+      line-height: 60px;
       width: 100%;
       position: absolute;
       top: 0;

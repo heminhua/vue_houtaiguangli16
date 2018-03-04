@@ -3,10 +3,9 @@
         <div class="main_top">
             <!-- Breadcrumb 面包屑 -->
             <el-breadcrumb separator="/">
-                <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-                <el-breadcrumb-item>活动管理</el-breadcrumb-item>
-                <el-breadcrumb-item>活动列表</el-breadcrumb-item>
-                <el-breadcrumb-item>活动详情</el-breadcrumb-item>
+                <el-breadcrumb-item :to="{ path: '/' }">购物商城</el-breadcrumb-item>
+                <el-breadcrumb-item>首页</el-breadcrumb-item>
+                <el-breadcrumb-item>内容管理</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="main_handle">
@@ -16,20 +15,17 @@
             <el-input prefix-icon="el-icon-search" placeholder="请输入内容" v-model="input21">
             </el-input>
         </div>
-        <app-main></app-main>
-        <!-- 渲染子页面  -->
-        <router-view></router-view>
+    
     </div>
+
 
 </template>
 
 <script>
-import Main from '../goods/GoodsList.vue'
+
 
 export default {
-    components: {
-      appMain:Main,  
-    },
+  
     data() {
         return {
             input21: '',

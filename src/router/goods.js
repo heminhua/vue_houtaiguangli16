@@ -1,5 +1,5 @@
 // 商品管理模块组件
-import GoodsContentListComponent from '../component/admin/goods/content/list.vue';
+import GoodsContentListComponent from '../component/admin/goods/content/GoodsContentList.vue';
 import GoodsContentAddComponent from '../component/admin/goods/content/GoodsContentAdd.vue';
 import GoodsContentEditComponent from '../component/admin/goods/content/GoodsContentEdit.vue';
 import GoodsCategoryListComponent from '../component/admin/goods/category/GoodsCategoryList.vue';
@@ -12,7 +12,7 @@ module.exports = [
     // 商品管理
     { name: "gctl", path: "goods/content/list", component: GoodsContentListComponent },
     { name: "gcta", path: "goods/content/add", component: GoodsContentAddComponent },
-    { name: "gcte", path: "goods/content/edit", component: GoodsContentEditComponent },
+    { name: "gcte", path: "goods/content/edit/:id", component: GoodsContentEditComponent },
 
 //     // 商品分类管理
     { name: "gcgl", path: "goods/category/list", component: GoodsCategoryListComponent },

@@ -33,7 +33,7 @@
                     </el-submenu>
                 </el-menu>
 
-            </el-menu>
+            
         </el-aside>
         <!-- element-ui -->
     </div>
@@ -48,7 +48,7 @@
                 menu: [
                     { title: '学员问题', submenu:
                         [
-                            { text: '内容管理', path: '/' },
+                            { text: '内容管理', path: '/admin/goods/content/list' },
                             { text: '类别管理', path: '/' },
                             { text: '评论管理', path: '/' },
                         ]
@@ -76,7 +76,7 @@
                     },
                     { title: '商品管理', submenu:
                         [
-                            { text: '内容管理', path: '/' },
+                            { text: '内容管理', path: '/admin/goods/content/list' },
                             { text: '类别管理', path: '/' },
                             { text: '评论管理', path: '/' },
                         ]
